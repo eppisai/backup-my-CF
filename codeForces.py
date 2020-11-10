@@ -143,7 +143,7 @@ elif(language.find('Java')):
 filename+='.'+fileExtension
 
 #saving code with appropriate file name
-    if(os.path.isfile('./'+filename)==False):
-        f = open(filename, "w")
-        f.write(codestr)
-        f.close()
+if(os.path.isfile('./'+filename)==False):
+    f = open(filename, "w")
+    f.write(codestr)
+    f.close()
